@@ -6,10 +6,11 @@ let player = "X"
 for (let i = 0; i < cells.length; i++) {
     cells[i].addEventListener("click", cellClicked);
 }
-function cellClicked() {
+function cellClicked(event) {
     event.target.textContent = player;
-    {
-        winner(player)
+    
+        setTimeout(() => {
+        winner(player) 
 
         if (player === "X") {
             player = "O";
@@ -18,9 +19,10 @@ function cellClicked() {
             player = "X";
         }
 
-    }
+    }, 1); 
 
 }
+
 
 
 
