@@ -8,9 +8,9 @@ for (let i = 0; i < cells.length; i++) {
 }
 function cellClicked(event) {
     event.target.textContent = player;
-    
-        setTimeout(() => {
-        winner(player) 
+
+    setTimeout(() => {
+        winner(player)
 
         if (player === "X") {
             player = "O";
@@ -19,7 +19,7 @@ function cellClicked(event) {
             player = "X";
         }
 
-    }, 1); 
+    }, 1);
 
 }
 
@@ -31,7 +31,7 @@ function winner(player) {
         alert(player + " Wins!")
     }
     else if (cells[3].textContent === player && cells[4].textContent === player && cells[5].textContent === player) {
-        alert(player + " Wins!"); reset()
+        alert(player + " Wins!");
     } else if (cells[6].textContent === player && cells[7].textContent === player && cells[8].textContent === player) {
         alert(player + " Wins!")
     } else if (cells[0].textContent === player && cells[3].textContent === player && cells[6].textContent === player) {

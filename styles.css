@@ -1,16 +1,15 @@
-body{
+body {
   background-color: mintcream;
 }
 
-h1{
-  color: black
+h1 {
+  color: black;
 }
 
 #board {
   padding: 3em;
   text-align: center;
   font-family: monospace;
-
 }
 
 .row > div {
